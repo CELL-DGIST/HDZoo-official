@@ -34,14 +34,14 @@ def parse_args():
  
     parser.add_argument('--encoder', default='nonlinear', type=str,
             required=False, help='sets encoding protocol', dest='encoder',
-            choices=['idlevel', 'linear', 'nonlinear'])\
+            choices=['idlevel', 'randomproj', 'nonlinear'])
                 
     parser.add_argument('-nb', '--nonbin', action='store_true',
-            required=False, help='do not apply binarze hypervectors in the selected encoding method',
+            required=False, help='do not apply binarize hypervectors in the selected encoding method',
             dest='nonbinarize')
     
     parser.add_argument('-q', '--quantization', default=100, type=int,
-            required=False, help='sets qunatization level for IDLEVEL encoder',
+            required=False, help='sets quantization level for IDLEVEL encoder',
             dest='q')
  
     parser.add_argument('-m', '--mass', action='store_true',
