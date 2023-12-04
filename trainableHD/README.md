@@ -78,5 +78,5 @@ optional arguments:
 ## Torch Quantization Support for Inference
 While quantization-aware training in this framework might not require the patch, as it emulates the INT8 data type using float32 precision during the training procedure, performing inference with quantized data types does necessitate patching PyTorch.
 This is specifically to support the sign() operation, which is not natively accommodated in standard PyTorch builds.
-Please follow the detailed instructions provided in the [pytorch_patch_quant_sign](pytorch_patch_quant_sign) directory.
-These instructions will guide you through the process of modifying the PyTorch code to include support for the sign() operation in quantized data types.
+
+For more details, please follow the detailed instructions provided in the [pytorch_patch_quant_sign](pytorch_patch_quant_sign) directory.
