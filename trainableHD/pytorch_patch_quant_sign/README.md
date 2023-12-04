@@ -11,6 +11,9 @@ Thus, except for the patched parts, all related licenses and rights are as per t
    - To ensure a safe build, locate the comments marked with "Yeseong" in your PyTorch source code. You can use the command `grep -nr 'Yeseong' .` to find these comments.
    - Apply the changes indicated by these comments to your version of the PyTorch source code.
 
+### You should build the pytorch code with the patched file
+- Please refer to `Installation` -> `From Source` section in the [original PyTorch repository](https://github.com/pytorch/pytorch).
+
 ### Files Requiring Patches:
 The patch involves changes to several files within the `aten/src/ATen/native/quantized/` directory. Here's a list of the specific files and the lines where the modifications are marked by the comment "Yeseong":
 
