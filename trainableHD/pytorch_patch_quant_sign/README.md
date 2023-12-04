@@ -1,6 +1,6 @@
 # PyTorch patch to support sign() for quantized data type
 This patch is designed for PyTorch version 1.20.0 and specifically targets the `aten/src/ATen/native/quantized/` directory in the PyTorch codebase.
-This patch includes all the files from the specific version's directory in the PyTorch codebase for your convenience, not just the parts that have been modified.
+This repo includes all the files from the specific version's directory in the PyTorch codebase for your convenience, not just the parts that have been modified.
 Thus, except for the patched parts, all related licenses and rights are as per the [original PyTorch repository](https://github.com/pytorch/pytorch).
 
 ### How to Apply the Patch:
