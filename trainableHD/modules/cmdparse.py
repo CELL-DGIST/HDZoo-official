@@ -24,7 +24,7 @@ def parse_args():
     parser.add_argument('-lr', '--learning_rate', default=0.0001, type=float, 
             required=False, help='set learning rate value', dest='learning_rate')
  
-    parser.add_argument('--optimizer', default='Momentum', type=str,
+    parser.add_argument('--optimizer', default='Adam', type=str,
             required=False, help='set choose optimizer', dest='optimizer',
             choices=['AdaDelta', 'RMS', 'Adagrad', 'NAG', 'Momentum', 'SGD', 'Adam'])
  
