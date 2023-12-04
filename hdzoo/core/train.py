@@ -42,7 +42,7 @@ def default_callback(epoch, acc, test_acc, loss):
 
 """
 Retraining procedure -
-The general idea of bundling the hypervectors only for the misclassified samples are proposed here:
+The general idea of bundling the hypervectors only for the misclassified samples is proposed here (probably for the first time):
 - Imani, Mohsen, Deqian Kong, Abbas Rahimi, and Tajana Rosing. "Voicehd: Hyperdimensional computing for efficient speech recognition." In 2017 IEEE international conference on rebooting computing (ICRC), pp. 1-8. IEEE, 2017.
 If you want to look at the pseudocode, you may refer to this paper:
 - Kim, Yeseong, Mohsen Imani, and Tajana S. Rosing. "Efficient human activity recognition using hyperdimensional computing." In Proceedings of the 8th International Conference on the Internet of Things, pp. 1-6. 2018.
