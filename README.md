@@ -40,7 +40,7 @@ argparse 1.1
 ## Dataset
 The datasets provided in the HD Zoo include most benchmarks used by my group and colleagues at institutions like UCSD, UCI, and UL Lafayette for HDC evaluation
 You can find detailed information about these datasets in the [dataset](dataset) directory. However, due to the large size of these files, they are not included directly in the repository. Instead, you can download them from the following Google Drive link:
-- [HD Zoo Datasets](https://drive.google.com/file/d/1CjWQIVSHWI2_bPdNxjs73mH2-TLy6KLH/view?usp=drive_link)
+- [HD Zoo Datasets](https://drive.google.com/file/d/1cMtHl5S1TGt21W_IJCWaxJO8ngIHbXt2/view?usp=sharing)
 
 The format supported by HD Zoo is the `choir_dat` format, which I initially developed for my ICCAD'21 paper ("Massive parallel, ...").
 This format is designed to accommodate various datasets.
@@ -102,8 +102,8 @@ optional arguments:
 The HD Zoo framework supports a variety of encoding algorithms and training methods, as outlined below. It's important to note that the names of these methods may vary across different papers.
 
 - Conventional single-pass training
-  - The single-pass training option that HD Zoo provides is really old-fashioned -- it does not perform any similarity checks. So, it might result in very low accuracies.
-  - A more effective approach is to use the retraining method for a single epoch, which can be done using the -i 1 option.
+  - The single-pass training option of HD Zoo enables the really old-fashioned single-pass training -- it does not perform any similarity checks. So, it might result in very low accuracies.
+  - A more effective (and state-of-the-art) single-pass learning would be to use the retraining method and run it for a single epoch, which can be done using the -i 1 option.
 - Typical iterative training (a.k.a. retraining)
   - This method involves bundling hypervectors only for misclassified samples. The general idea was (probably first) proposed in:
     - Imani, Mohsen, Deqian Kong, Abbas Rahimi, and Tajana Rosing. "Voicehd: Hyperdimensional computing for efficient speech recognition." In 2017 IEEE international conference on rebooting computing (ICRC), pp. 1-8. IEEE, 2017.
