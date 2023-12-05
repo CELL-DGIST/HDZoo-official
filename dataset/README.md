@@ -217,11 +217,13 @@ For the details of the datasets and their references, please refer to the origin
 - MAR, SHA (Plant speciy classification), TEX: mar_*.choir_dat, sha_*.choir_dat, tex_*.choir_dat
   - https://archive.ics.uci.edu/dataset/241/one+hundred+plant+species+leaves+data+set
   ```
-  @misc{misc_one-hundred_plant_species_leaves_data_set_241,
-    author       = {Cope,James, Beghin,Thibaut, Remagnino,Paolo, and Barman,Sarah},
-    title        = {{One-hundred plant species leaves data set}},
-    year         = {2012},
-    howpublished = {UCI Machine Learning Repository},
-    note         = {{DOI}: https://doi.org/10.24432/C5RG76}
+  @article{mallah2013plant,
+    title={Plant leaf classification using probabilistic integration of shape, texture and margin features},
+    author={Mallah, Charles and Cope, James and Orwell, James and others},
+    journal={Signal Processing, Pattern Recognition and Applications},
+    volume={5},
+    number={1},
+    pages={45--54},
+    year={2013}
   }
   ```
