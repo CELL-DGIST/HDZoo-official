@@ -13,6 +13,23 @@ The TrainableHD repository provides the implementation details as presented in t
   year={2023},
   organization={IEEE}
 }
+@article{10.1145/3665891,
+author = {Kim, Jiseung and Lee, Hyunsei and Imani, Mohsen and Kim, Yeseong},
+title = {Advancing Hyperdimensional Computing Based on Trainable Encoding and Adaptive Training for Efficient and Accurate Learning},
+year = {2024},
+issue_date = {September 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {29},
+number = {5},
+issn = {1084-4309},
+url = {https://doi.org/10.1145/3665891},
+doi = {10.1145/3665891},
+month = sep,
+articleno = {89},
+numpages = {25},
+keywords = {Hyperdimensional computing, brain-inspired computing, quantization-aware training, adaptive optimization}
+}
 ```
 
 ## Prerequisite
