@@ -1,4 +1,4 @@
-# HD Zoo
+# HD Zoo: An open source for HD computing in PyTorch
 <p align="center"><img src="hdzoo.png" width="300" alt="HD zoo logo"/></p>
 
 Hyperdimensional Computing (HD Computing or HDC) is an alternative computing approach inspired by the human brain. Researchers are exploring HDC for its potential as an efficient learning method.
