@@ -1,4 +1,4 @@
-# HD Zoo: An open-source Implementation for Hyperdimensional Computing in PyTorch
+# HD Zoo: An Open-source Implementation for Hyperdimensional Computing in PyTorch
 <p align="center"><img src="hdzoo.png" width="300" alt="HD zoo logo"/></p>
 
 Hyperdimensional Computing (HD Computing or HDC, a.k.a VSA) is an alternative computing approach inspired by the human brain. It is gaining attention for its potential as an efficient and robust learning method.
