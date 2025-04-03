@@ -1,13 +1,13 @@
-# HD Zoo: An open source for HD computing in PyTorch
+# HD Zoo: An open-source Implementation for Hyperdimensional Computing in PyTorch
 <p align="center"><img src="hdzoo.png" width="300" alt="HD zoo logo"/></p>
 
-Hyperdimensional Computing (HD Computing or HDC) is an alternative computing approach inspired by the human brain. Researchers are exploring HDC for its potential as an efficient learning method.
+Hyperdimensional Computing (HD Computing or HDC, a.k.a VSA) is an alternative computing approach inspired by the human brain. It is gaining attention for its potential as an efficient and robust learning method.
 
 The repository, HD Zoo, serves as a collection of classification learning algorithms, covering multiple academic papers.
-While HD Zoo may not encompass every essence of HDC literature, we hope it can at least offer a good enough overview of our previous work and provide a starting/reference point to devise new ideas in the field of HDC.
+While it may not encompass every essence of HDC literature, we hope it can at least offer a good enough overview of our previous work and provide a starting/reference point to devise new ideas in the field of HDC.
 For a list of the specific papers implemented in HD Zoo, please see the [Supported Algorithms section](#supported-algorithms).
 
-The implementations in HD Zoo are derived from various codes developed over a series of research studies in our research team, [CELL @ DGIST](https://cell.dgist.ac.kr/) (probably, some code would come from my old times at UCSD).
+The implementations in HD Zoo are derived from codebases developed over a series of research studies conducted by our research team, [CELL @ DGIST](https://cell.dgist.ac.kr/) (probably, some code would come from earlier work during my time at UCSD).
 We have assembled these in conjunction with the release of our latest publication, TrainableHD (DAC'23), the code for which is also included in this repository.
 
 Hope it helps!
@@ -16,12 +16,11 @@ Yeseong
 
 ### Torch-based Implementation
 The HD Zoo framework is primarily built using PyTorch and is thus optimized for GPU acceleration using float32 precision.
-It should be fully functional to obtain experimental results for the accuracies. (If you notice significant discrepancies in accuracy compared to your expectations, it would be due to the bugs that happened during our code collection. In that case, please let us know.)
+It should be fully functional for obtaining experimental results and evaulting accuracies. (If you notice significant discrepancies in accuracy compared to your expectation, it would be due to integration bugs introduced during our code collection. In that case, please let us know.)
 While the framework performs well for most tasks, certain features like ID-level encoding may be more efficiently executed on dedicated hardware accelerators, such as FPGA or ASIC, due to their binary-centric nature.
-Additionally, even within the GPU domain, there may be more optimized implementations, possibly involving native CUDA coding, that leverage these binary-centric characteristics more effectively.
+Also, even on GPUs, there may exist more optimized implementations, such as those using native CUDA kernels, which can better explot these binary-centric characteristics.
 So, please approach performance extrapolation cautiously when considering different hardware and platform configurations.
-The HD Zoo should be viewed as a potential, but not exclusive, implementation for GPU-based code, adaptable to various hardware setups depending on specific requirements and optimizations.
-
+The HD Zoo should be viewed as a potential, but not exclusive, reference implementation for GPU-based code, adaptable to various hardware setups depending on specific requirements and optimization.
 
 ## Requirements
 The repository requires several Python libraries.
@@ -38,7 +37,7 @@ argparse 1.1
 ```
 
 ## Dataset
-The datasets provided in the HD Zoo include most benchmarks used by my group and colleagues at institutions like UCSD, UCI, and UL Lafayette for HDC evaluation
+The datasets provided in the HD Zoo include most benchmarks used by my group and colleagues from institutions like UCSD, UCI, and UL Lafayette for HDC evaluation
 You can find detailed information about these datasets in the [dataset](dataset) directory. However, due to the large size of these files, they are not included directly in the repository. Instead, you can download them from the following Google Drive link:
 - [HD Zoo Datasets](https://drive.google.com/file/d/1cMtHl5S1TGt21W_IJCWaxJO8ngIHbXt2/view?usp=sharing)
 
@@ -54,7 +53,7 @@ There's no need to specify the testing dataset separately, as the code will loca
 python main.py dataset/mnist_train.choir_dat
 ```
 
-You have the option to change the encoding method. For example, if you want to use the `randomproj` encoding method, the command would be modified as follows:
+You also have the option to change the encoding method. For example, if you want to use the `randomproj` encoding method, the command would be modified as follows:
 
 ```
 python main.py --encoder randomproj dataset/mnist_train.choir_dat
@@ -120,7 +119,7 @@ The HD Zoo framework supports a variety of encoding algorithms and training meth
 - MASS retraining
   - Kim, Yeseong, Jiseung Kim, and Mohsen Imani. "Cascadehd: Efficient many-class learning framework using hyperdimensional computing." In 2021 58th ACM/IEEE Design Automation Conference (DAC), pp. 775-780. IEEE, 2021.
 
-## Citation
+## Citations
 This repository is compiled to support the experiments presented in our recent papers:
 
 ```
